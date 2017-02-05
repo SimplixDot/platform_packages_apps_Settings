@@ -3326,6 +3326,28 @@
         <service android:name=".fuelgauge.batterytip.AnomalyDetectionJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
 
+        <!-- Anonymous Statistics -->
+        <receiver android:name="com.cosmic.settings.cosmicstats.ReportingServiceManager"
+            android:enabled="true"
+            android:exported="false"
+            android:label="ReportingServiceManager">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.cosmic.settings.action.TRIGGER_REPORT_METRICS" />
+            </intent-filter>
+        </receiver>
+         <service android:label="ReportingService"
+            android:enabled="true"
+            android:exported="false"
+            android:name=".cosmicstats.ReportingService">
+        </service>
+         <service android:name="com.cosmic.settings.cosmicstats.StatsUploadJobService"
+                 android:permission="android.permission.BIND_JOB_SERVICE" />
+         <service android:name="com.cosmic.settings.cosmicstats.ReportingService"
+                 android:label="ReportingService"
+                 android:enabled="true"
+                 android:exported="false" />
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
