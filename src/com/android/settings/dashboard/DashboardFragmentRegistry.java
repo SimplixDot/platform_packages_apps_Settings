@@ -42,6 +42,8 @@ import com.android.settingslib.drawer.CategoryKey;
 
 import java.util.Map;
 
+import com.cosmic.settings.Galaxy;
+
 /**
  * A registry to keep track of which page hosts which category.
  */
@@ -101,6 +103,8 @@ public class DashboardFragmentRegistry {
             CategoryKey.CATEGORY_GESTURES);
         PARENT_TO_CATEGORY_KEY_MAP.put(NightDisplaySettings.class.getName(),
             CategoryKey.CATEGORY_NIGHT_DISPLAY);
+        PARENT_TO_CATEGORY_KEY_MAP.put(Galaxy.class.getName(),
+                CategoryKey.CATEGORY_GALAXY);
 
         CATEGORY_KEY_TO_PARENT_MAP = new ArrayMap<>(PARENT_TO_CATEGORY_KEY_MAP.size());
 
