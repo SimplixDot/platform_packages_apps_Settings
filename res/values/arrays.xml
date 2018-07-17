@@ -1026,9 +1026,9 @@
 
     <!-- Array of titles for sim color for multi-sim -->
     <string-array name="color_picker">
-        <item>Teal</item>
+        <item>Simplix Orange</item>
         <item>Blue</item>
-        <item>Indigo</item>
+        <item>Teal</item>
         <item>Purple</item>
         <item>Pink</item>
         <item>Red</item>

@@ -65,6 +65,8 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_DEVICE);
         PARENT_TO_CATEGORY_KEY_MAP.put(AppAndNotificationDashboardFragment.class.getName(),
                 CategoryKey.CATEGORY_APPS);
+        PARENT_TO_CATEGORY_KEY_MAP.put(CosmicSettings.class.getName(),
+                CategoryKey.CATEGORY_APPS);
         PARENT_TO_CATEGORY_KEY_MAP.put(PowerUsageSummary.class.getName(),
                 CategoryKey.CATEGORY_BATTERY);
         PARENT_TO_CATEGORY_KEY_MAP.put(DefaultAppSettings.class.getName(),
@@ -91,8 +93,6 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_NOTIFICATIONS);
         PARENT_TO_CATEGORY_KEY_MAP.put(LockscreenDashboardFragment.class.getName(),
                 CategoryKey.CATEGORY_SECURITY_LOCKSCREEN);
-        PARENT_TO_CATEGORY_KEY_MAP.put(CosmicSettings.class.getName(),
-                CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
 
         CATEGORY_KEY_TO_PARENT_MAP = new ArrayMap<>(PARENT_TO_CATEGORY_KEY_MAP.size());
 
