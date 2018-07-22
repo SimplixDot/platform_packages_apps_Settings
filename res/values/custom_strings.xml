@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Simplix-Dot version -->
-    <string name="cosmic_version">Simplix. version</string>
+    <string name="cosmic_version">Simplix version</string>
     <string name="cosmic_version_default">Unknown</string>
 
    <!-- System Updates -->
@@ -37,7 +37,7 @@
     <string name="device_info_title">Phone info</string>
 
     <!-- Cosmic Settings -->
-    <string name="cosmic_settings_title">Simplix. Gear</string>
+    <string name="cosmic_settings_title">Orange Gear</string>
     <string name="cosmic_settings_summary">Fully customize your device</string>
 
     <!-- General Settings -->
