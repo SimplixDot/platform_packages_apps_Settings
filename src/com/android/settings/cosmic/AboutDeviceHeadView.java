@@ -12,7 +12,7 @@ import com.android.settings.R;
 
 public class AboutDeviceHeadView extends RelativeLayout {
 
-    TextView device_name, android_ver;
+    TextView device_name;
 
     public AboutDeviceHeadView(Context context) {
         super(context);
@@ -27,9 +27,7 @@ public class AboutDeviceHeadView extends RelativeLayout {
     private void init(final Context context, @Nullable AttributeSet attrs) {
         View base = inflate(context, R.layout.device_about_top, this);
         device_name = base.findViewById(R.id.device_name);
-        android_ver = base.findViewById(R.id.android_ver);
         device_name.setText(SystemProperties.get("ro.product.device"));
-        android_ver.setText(SystemProperties.get("ro.build.version.release"));
     }
 
 }
