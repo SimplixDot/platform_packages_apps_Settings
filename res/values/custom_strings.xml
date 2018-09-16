@@ -14,4 +14,15 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Locate the fingerprint sensor on the left side of your phone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Locate the fingerprint sensor on the right side of your phone.</string>
 
+    <!-- SetupWizard Privacy Policy Fragment -->
+    <string name="suw_privacy_policy_title">Cosmic Privacy Policy</string>
+    <string name="suw_privacy_policy_message">We collect completely anonymous data to better understand our users. You can view the current data that will be sent from your device below. Go to https://cosmic-os.org/Privacy.html to view the full privacy policy.</string>
+    <string name="suw_stats_title">Help improve Cosmic-OS</string>
+    <string name="suw_stats_summary">Allow us to collect the anonymous data shown above</string>
+    <string name="suw_view_policy">View full privacy policy</string>
+    <string name="suw_view_policy_summary">Click here to open the privacy policy</string>
+    <string name="suw_accept_category">Do you accept our privacy policy?</string>
+    <string name="suw_accept_title">I accept the privacy policy</string>
+    <string name="suw_accept_summary">By clicking, you acknowledge that you have read the above privacy policy and consent to the outlined use of collected data</string>
+
 </resources>
