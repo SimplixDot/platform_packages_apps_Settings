@@ -22,8 +22,6 @@ import android.text.BidiFormatter;
 
 import com.android.settings.R;
 
-import android.os.SystemProperties;
-
 public class BuildNumberDialogController {
 
     @VisibleForTesting
@@ -35,24 +33,11 @@ public class BuildNumberDialogController {
         mDialog = dialog;
     }
 
-    private String getCosmicVersion(){
-        String buildDate = SystemProperties.get("ro.cos.build_date","");
-        String buildType = SystemProperties.get("ro.cos.releasetype","unofficial").toUpperCase();
-        return buildDate.equals("") ? "" : "Cosmic-OS-" + buildDate + "-" + buildType;
-    }
-
     /**
      * Updates the build number to the dialog.
      */
     public void initialize() {
-        
-        StringBuilder sb = new StringBuilder();
-        sb.append(BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
-        String CosmicVersion = getCosmicVersion();
-        if (!CosmicVersion.equals("")){
-            sb.append("\n");
-            sb.append(CosmicVersion);
-        }
-        mDialog.setText(BUILD_NUMBER_VALUE_ID, sb.toString());
+        mDialog.setText(BUILD_NUMBER_VALUE_ID,
+                BidiFormatter.getInstance().unicodeWrap(Build.DISPLAY));
     }
 }
