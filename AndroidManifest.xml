@@ -1724,17 +1724,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".password.SetupPrivacyPolicy"
-                  android:theme="@style/GlifTheme.Light"
-                  android:label="@string/suw_privacy_policy_title">
-            <intent-filter android:priority="2">
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
-                <category android:name="android.intent.category.HOME" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
         <activity android:name=".password.ChooseLockGeneric"
             android:label="@string/lockpassword_choose_lock_generic_header"
             android:excludeFromRecents="true"
@@ -3336,28 +3325,6 @@
 
         <service android:name=".fuelgauge.batterytip.AnomalyDetectionJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
-
-        <!-- Anonymous Statistics -->
-        <receiver android:name="com.cosmic.settings.cosmicstats.ReportingServiceManager"
-            android:enabled="true"
-            android:exported="false"
-            android:label="ReportingServiceManager">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="com.cosmic.settings.action.TRIGGER_REPORT_METRICS" />
-            </intent-filter>
-        </receiver>
-         <service android:label="ReportingService"
-            android:enabled="true"
-            android:exported="false"
-            android:name=".cosmicstats.ReportingService">
-        </service>
-         <service android:name="com.cosmic.settings.cosmicstats.StatsUploadJobService"
-                 android:permission="android.permission.BIND_JOB_SERVICE" />
-         <service android:name="com.cosmic.settings.cosmicstats.ReportingService"
-                 android:label="ReportingService"
-                 android:enabled="true"
-                 android:exported="false" />
 
         <!-- Galaxy -->
         <activity android:name=".Settings$CosmicSettingsActivity"

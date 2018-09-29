@@ -1,13 +1,19 @@
 <layer-list
     xmlns:android="http://schemas.android.com/apk/res/android">
-<item>
-    <shape android:shape="oval">
-        <solid android:color="#921ce1" />
-        <size android:height="36dp"
-            android:width="36dp" />
-    </shape>
+	<item>
+        <shape android:shape="oval">
+            <solid
+                android:color="#4a86e8" />
+            <size
+                android:width="@dimen/dashboard_tile_image_size"
+                android:height="@dimen/dashboard_tile_image_size" />
+        </shape>
     </item>
+
     <item
-        android:height="36dp" android:width="36dp"
+        android:width="@dimen/dashboard_tile_foreground_image_size"
+        android:height="@dimen/dashboard_tile_foreground_image_size"
+        android:start="@dimen/dashboard_tile_foreground_image_inset"
+        android:top="@dimen/dashboard_tile_foreground_image_inset"
         android:drawable="@drawable/ic_settings_cosmic_foreground" />
 </layer-list>

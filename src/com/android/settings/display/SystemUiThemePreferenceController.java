@@ -52,7 +52,7 @@ public class SystemUiThemePreferenceController extends BasePreferenceController
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mSystemUiThemePref = (ListPreference) screen.findPreference(getPreferenceKey());
-        int value = Settings.Secure.getInt(mContext.getContentResolver(), THEME_MODE, 0);
+        int value = Settings.Secure.getInt(mContext.getContentResolver(), THEME_MODE, 4);
         mSystemUiThemePref.setValue(Integer.toString(value));
     }
 
@@ -66,7 +66,7 @@ public class SystemUiThemePreferenceController extends BasePreferenceController
 
     @Override
     public CharSequence getSummary() {
-        int value = Settings.Secure.getInt(mContext.getContentResolver(), THEME_MODE, 0);
+        int value = Settings.Secure.getInt(mContext.getContentResolver(), THEME_MODE, 4);
         int index = mSystemUiThemePref.findIndexOfValue(Integer.toString(value));
         return mSystemUiThemePref.getEntries()[index];
     }
