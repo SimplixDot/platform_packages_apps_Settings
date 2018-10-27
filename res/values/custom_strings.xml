@@ -7,11 +7,14 @@
 
     <!-- Cosmic Settings -->
     <string name="cosmic_settings_title">Blue Advancements</string>
-    <string name="cosmic_settings_summary">Nothing burns like the cold</string>
+    <string name="cosmic_settings_summary">I\'m the Real Thing</string>
 
     <!-- Fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Locate the fingerprint sensor on the front of your phone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_left">Locate the fingerprint sensor on the left side of your phone.</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message_right">Locate the fingerprint sensor on the right side of your phone.</string>
+
+	<!-- Summary of Simplix Updates -->
+    <string name="simplix_version_summary">Updated to Simplix Blue (Tap to launch Center app)</string>
 
 </resources>

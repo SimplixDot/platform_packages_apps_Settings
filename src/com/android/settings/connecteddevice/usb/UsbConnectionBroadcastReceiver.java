@@ -77,6 +77,11 @@ public class UsbConnectionBroadcastReceiver extends BroadcastReceiver implements
                 mFunctions = functions;
                 mDataRole = mUsbBackend.getDataRole();
                 mPowerRole = mUsbBackend.getPowerRole();
+                if (mDataRole == UsbPort.DATA_ROLE_NONE &&
+                    intent.getExtras().getBoolean(UsbManager.USB_CONNECTED) &&
+                    !intent.getExtras().getBoolean(UsbManager.USB_HOST_CONNECTED)) {
+                    	mDataRole = UsbPort.DATA_ROLE_DEVICE;
+                }
             }
         } else if (UsbManager.ACTION_USB_PORT_CHANGED.equals(intent.getAction())) {
             UsbPortStatus portStatus = intent.getExtras()
