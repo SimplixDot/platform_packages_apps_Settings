@@ -7,7 +7,7 @@
 
     <!-- Cosmic Settings -->
     <string name="cosmic_settings_title">Blue Advancements</string>
-    <string name="cosmic_settings_summary">I\'m the Real Thing</string>
+    <string name="cosmic_settings_summary">Have a Blue Christmas!</string>
 
     <!-- Fingerprint location message -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front">Locate the fingerprint sensor on the front of your phone.</string>
